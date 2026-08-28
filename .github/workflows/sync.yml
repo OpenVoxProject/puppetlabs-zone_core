@@ -10,3 +10,5 @@ permissions:
 jobs:
   update:
     uses: OpenVoxProject/shared-actions/.github/workflows/sync.yml@main
+    secrets:
+      WORKFLOW_TOKEN: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
