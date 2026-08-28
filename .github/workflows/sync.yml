@@ -3,6 +3,10 @@ on:
   workflow_dispatch:
   schedule:
   - cron:  '0 2 * * *'
+
+permissions:
+  contents: write
+
 jobs:
   update:
-    uses: overlookinfra/shared-actions/.github/workflows/sync.yml@main
+    uses: OpenVoxProject/shared-actions/.github/workflows/sync.yml@main
